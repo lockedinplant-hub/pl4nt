@@ -1,0 +1,30 @@
+/* admin.css - Custom styles for PL4NT Admin Panel */
+
+.admin-badge {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.avatar-circle {
+  width: 35px;
+  height: 35px;
+  background-color: var(--bg-primary-green, #367b5a);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.table th {
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table td {
+  vertical-align: middle;
+}

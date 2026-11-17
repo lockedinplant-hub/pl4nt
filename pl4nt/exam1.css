@@ -1,0 +1,134 @@
+:root {
+  --bg-primary-green: #367b5a;
+  --bg-secondary-green: #1f7a4c;
+  --accent-yellow: #f5b700;
+  --accent-yellow-hover: #d49e00;
+  --light-bg: #f7f7f7;
+  --text-dark: #090909;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+}
+
+/* Announcement Bar */
+.announcement-bar {
+  background-color: var(--accent-yellow);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--bg-primary-green);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-weight: 600;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--accent-yellow) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--bg-primary-green) 0%, var(--bg-secondary-green) 100%);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(245,183,0,0.15) 0%, rgba(2, 2, 2, 0) 70%);
+  border-radius: 50%;
+}
+
+/* Buttons & Badges */
+.btn-accent {
+  background-color: var(--accent-yellow);
+  color: var(--text-dark);
+  font-weight: 700;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-yellow-hover);
+  color: var(--text-dark);
+  transform: translateY(-2px);
+}
+
+.bg-yellow {
+  background-color: var(--accent-yellow) !important;
+}
+
+.text-accent {
+  color: var(--accent-yellow) !important;
+}
+
+.badge-accent {
+  background-color: var(--accent-yellow);
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+/* Product Cards */
+.product-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.04);
+}
+
+.product-card:hover {
+  transform: translateX(-8px);
+  box-shadow: 0 15px 30px rgba(11, 60, 38, 0.12);
+}
+
+.product-img-wrapper {
+  height: 240px;
+  overflow: hidden;
+}
+
+.product-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img-wrapper img {
+  transform: scale(1.08);
+}
+
+.price-tag {
+  color: var(--bg-primary-green);
+  font-size: 1.25rem;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-primary-green);
+  color: #fff;
+}
